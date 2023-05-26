@@ -29,7 +29,7 @@ for (let i = 0; i < 9; i++) {
     })
 }
 
-//reset the game
+//reset the game and the DOM
 restartBtn.addEventListener("click", () => {
     game.restart()
     document.querySelectorAll("._game-grid-item").forEach((gridCell) => {
