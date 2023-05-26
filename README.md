@@ -4,9 +4,9 @@
 
 npm i
 
-# run server on http://localhost:1234/ using parcel
+# run server on http://localhost:1234/
 
-parcel src/index.html
+npm start
 
 # run unit tests with vitest
 

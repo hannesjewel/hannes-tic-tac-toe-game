@@ -4,7 +4,8 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "start": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
