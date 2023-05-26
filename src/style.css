@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  margin: 0; }
+
+._section {
+  padding: 100px 0; }
+
+._container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  max-width: 1200px; }
+
+._game-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2px;
+  margin: 0 auto; }
+  ._game-grid ._game-grid-item {
+    width: 80px;
+    height: 80px;
+    outline: 2px solid #292b2c; }
+    @media (min-width: 768px) {
+      ._game-grid ._game-grid-item {
+        width: 100px;
+        height: 100px; } }
+
+._flexbox {
+  display: flex;
+  justify-content: center; }
+
+._game-status {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0; }
+
+._button {
+  cursor: pointer;
+  padding: 20px 50px;
+  font-size: 20px;
+  background-color: #2fb49e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto; }
+
+._game-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px; }
+  ._game-grid-item.x::after {
+    content: "X"; }
+  ._game-grid-item.o::after {
+    content: "O"; }
+
+._hide {
+  display: none; }
