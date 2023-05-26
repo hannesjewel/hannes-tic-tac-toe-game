@@ -10,6 +10,6 @@ npm start
 
 ### run tests
 
-npm run test==
+npm run test
 
 npx playwright test
