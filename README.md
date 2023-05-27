@@ -8,10 +8,8 @@ npm i
 
 npm start
 
-### run unit tests with vitest
+### run tests
 
 npm run test
-
-### run e2e tests with playwright
 
 npx playwright test
