@@ -8,8 +8,10 @@ npm i
 
 npm start
 
-### run tests
+### run vitest
 
 npm run test
+
+### run playwright
 
 npx playwright test

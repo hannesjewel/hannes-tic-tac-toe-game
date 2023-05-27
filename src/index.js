@@ -15,16 +15,18 @@ for (let i = 0; i < 9; i++) {
     gridCell.setAttribute("class", "_game-grid-item")
     grid.appendChild(gridCell)
     gridCell.addEventListener("click", () => {
-        let turn = game.turn //X or O's turn
-        game.onSelect(i) //trigger function when you click on a cell
-        gridCell.classList.add(turn) //puts X or O into the cell
-        //check if there was a win or a tie
-        if(game.status){
-            setTimeout(() => {
-                gameContainer.classList.add('_hide')
-                gameStatusContainer.classList.remove('_hide')
-                statusDisplay.innerHTML = game.status //display win or tie
-            }, 500);
+        if(game.checkIfDisabled(i)){
+            let turn = game.turn //X or O's turn
+            game.onSelect(i) //trigger function when you click on a cell
+            gridCell.classList.add(turn) //puts X or O into the cell
+            //check if there was a win or a tie
+            if(game.status){
+                setTimeout(() => {
+                    gameContainer.classList.add('_hide')
+                    gameStatusContainer.classList.remove('_hide')
+                    statusDisplay.innerHTML = game.status //display win or tie
+                }, 500);
+            }
         }
     })
 }
