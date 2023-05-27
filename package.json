@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build",
+    "build": "parcel build --public-url ./",
     "test": "vitest"
   },
   "keywords": [],
