@@ -1,6 +1,6 @@
 ## hannes-tic-tac-toe-game
 
-### install dependencies
+### install dev dependencies (parcel, vitest, playwright, gh-pages)
 
 npm i
 
